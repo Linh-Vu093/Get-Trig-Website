@@ -89,7 +89,7 @@ function storageEncryption() {
      * to encrypt and decrypt the data
      * */ 
 
-    localStorage.setEncryptedItem("token", "12345");
+    localStorage.setEncryptedItem("token", data);
     const token = localStorage.getDecryptedItem("token");
     console.log(token);
 }
