@@ -15,7 +15,8 @@ const surveyJson = {
             type: "text",
             name: "username",
             titleLocation: "hidden",
-            isRequired: true
+            isRequired: true,
+            requiredErrorText: "Please answer the question"
         }]
     }, {
         elements: [{
