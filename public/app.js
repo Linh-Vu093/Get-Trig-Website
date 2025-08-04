@@ -7,8 +7,8 @@ survey.onComplete.add((sender) => {
 });
 survey.data = {
     MCQ1: "-1",
-    MCQ2: "108",
-    MCQ3: "The foundation of the British parliamentary system"
+    MCQ2: "45°",
+    MCQ3: "3π/2"
 };
 survey.readOnly = true;
 survey.questionsOnPageMode = "singlePage";
@@ -61,12 +61,12 @@ function storageEncryption() {
   */
     let _key = "secret_key"
 
-    function encrypt(txt) {
-        return CryptoJS.AES.encrypt(txt, _key).toString();
+    function encrypt(data) {
+        return CryptoJS.AES.encrypt(data, _key).toString();
     }
 
     function decrypt(txtToDecrypt) {
-        return CryptoJS.AES.decrypt(txtToDecrypt, _key).toString(CryptoJS.enc.Utf8);
+        return CryptoJS.AES.decrypt(dataToDecrypt, _key).toString(CryptoJS.enc.Utf8);
     }
 
     function manipulateLocalStorage() {
