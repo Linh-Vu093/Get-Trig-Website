@@ -65,7 +65,7 @@ function storageEncryption() {
         return CryptoJS.AES.encrypt(data, _key).toString();
     }
 
-    function decrypt(txtToDecrypt) {
+    function decrypt(dataToDecrypt) {
         return CryptoJS.AES.decrypt(dataToDecrypt, _key).toString(CryptoJS.enc.Utf8);
     }
 
