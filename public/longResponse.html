@@ -20,11 +20,26 @@
     </div>
 
     <h2>Long Response Questions</h2>
+    <button class="button" onclick="showQ1Answer()">Click to show Question 1 answer</button>
+      <p>Question 1: Simplify sec²θ/sec²θ-1</p>
+      <div id="Q1">Please work out the answer on paper</div>
+    <script>
+    function showQ1Answer() {
+      var x = document.getElementById("Q1");
+      if (x.innerHTML === "Please work out the answer on paper") {
+        x.innerHTML = "csc²θ";
+      } else {
+        x.innerHTML = "Please work out the answer on paper";
+      }
+    }
+    </script>
+  <button class="button" onclick="showQ2Answer()">Click to show Question 2 answer</button>
+      <p>Question 2: sinx < 0, tan = -5/8, find cosx to the exact value</p>
+      <div id="Q2">Please work out answer on paper</div>
 
-    <p>
-      This is a simple plain-HTML website on GitLab Pages, without any fancy static site generator.
-    </p>
-    
+    <h3>More Resources</h3>
+      <a href="https://github.com/Linh-Vu093/Get-Trig-Website/blob/main/public/resource/mathematics-advanced-year-11-topic-guide-trigonometric-functions%20(1).docx" target="_blank">Year 11 Guide</a>
+      <a href="https://github.com/Linh-Vu093/Get-Trig-Website/blob/main/public/resource/mathematics-advanced-year-12-topic-guide-trigonometric-functions.docx">Year 12 Guide</a>
     <button class="button">
       <a href="quiz.html">Next: Quiz</a>
     </button>
