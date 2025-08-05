@@ -18,8 +18,9 @@ body {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar:hover {
   color: rgb(30,40,170);
+  cursor: pointer;
 }
 
 .button {
@@ -30,11 +31,12 @@ body {
   color: rgb(0,0,0);
   font-size: 15px;
   text-decoration: none;
-  float: left;
+  margin: 50px 25px;
 }
 
-.button a:hover {
+.button:hover {
   color: rgb(30,40,170);
+  cursor: pointer;
 }
 
 .correctAnswer {
