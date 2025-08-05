@@ -33,10 +33,21 @@
       }
     }
     </script>
+    
   <button class="button" onclick="showQ2Answer()">Click to show Question 2 answer</button>
       <p>Question 2: sinx < 0, tan = -5/8, find cosx to the exact value</p>
       <div id="Q2">Please work out answer on paper</div>
-
+    <script>
+    function showQ2Answer() {
+      var x = document.getElementById("Q2");
+      if (x.innerHTML === "Please work out the answer on paper") {
+        x.innerHTML = "cosx = 8/√89";
+      } else {
+        x.innerHTML = "Please work out the answer on paper";
+      }
+    }
+    </script>
+    
     <h3>More Resources</h3>
       <a href="https://github.com/Linh-Vu093/Get-Trig-Website/blob/main/public/resource/mathematics-advanced-year-11-topic-guide-trigonometric-functions%20(1).docx" target="_blank">Year 11 Guide</a>
       <a href="https://github.com/Linh-Vu093/Get-Trig-Website/blob/main/public/resource/mathematics-advanced-year-12-topic-guide-trigonometric-functions.docx">Year 12 Guide</a>
